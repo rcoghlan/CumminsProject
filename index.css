@@ -1,0 +1,27 @@
+.container{
+    margin-top: 10%;
+    padding-left: 17%;
+
+}
+
+h1{
+    background-color: red;
+    padding: 2%;
+}
+
+h2{
+    color: white;
+    background-color: black;
+    font-size: 200%;
+}
+
+.form{
+    border-style: outset;
+    margin-right: 34%;
+    padding: 3%;
+    padding-bottom: 1%;
+}
+
+a:link, a:visited{
+    color: white;
+}
