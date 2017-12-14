@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Service Providers</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="../Styles/SP.css">
+    </head>
+    <body>
+        
+            <form id = "topbar">
+                <select ng-model="ntc.selectedNote" ng-change = "ntc.assignClientName()">
+                    <option value="">English</option>
+                    <option value="">Spanish</option>
+                    <option value="">Latin</option>
+                    <option value="">German</option>
+                </select>
+                | Logged in as Admin5493 | <a href="index.html">Logout</a>
+            </form>
+            <div id="logo">
+                <h1> <img src="../picture/cumminsLogo.png" height = "5%" width="5%"> Cummins Diagnostic System - Administrator </h1>
+            </div>
+        <div class="location">
+            <div id="SPcode" class="form-group row" >
+                <label for="inpDate" class="col-sm-4 col-form-label" style=" font-size: 120%;">Enter a Service Provider Code</label>
+                <div class="col-sm-2">
+                    <input id="inpDate" class="form-control" >
+                </div>
+            </div>
+
+            <p style="padding-left: 20%; font-size: 150%;"> or </p>
+            <div id="dropdown">
+                <p> Select a State </p>
+                <form>	
+                    <select ng-model="ntc.selectedNote" ng-change = "ntc.assignClientName()">
+                        <option value="">Kansas</option>
+                        <option value="">Indiana</option>
+                        <option value="">Tennessee</option>
+                    </select>
+                </form>
+                <br>
+                <p> Select a City </p>
+                <form>	
+                    <select ng-model="ntc.selectedNote" ng-change = "ntc.assignClientName()">
+                        <option value="">Chanute</option>
+                        <option value="">Bloomington</option>
+                        <option value="">South Bend</option>
+                        <option value="">Nashville</option>
+                    </select>
+                </form>
+                <br>
+
+            </div>
+            <br>
+            <p id="view" style=" border-radius: 5px; text-align: center; margin-left: 20%; margin-right: 75%; font-size: 130%; background-color: #61A3F3; color: white;"> <a href="access.html">View</a> </p>
+        </div>
+        <br>
+        <p style="margin-left: 17%;">Upload Service Information:</p>
+        <div class="fileUpload">
+            <div class="form-group row">
+                <div class="col-sm-2">&nbsp;</div>
+                    <div class="col-sm-10">
+                    <input type="submit" value="Choose File" class="btn btn-primary">
+                </div>
+            </div>
+        </div>
+        <div>
+        <input  id="inpFile"  >
+        </div>
+
+    </body>
+</html>
